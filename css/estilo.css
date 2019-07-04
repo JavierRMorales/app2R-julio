@@ -1,0 +1,142 @@
+* {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	outline: 0;
+} 
+body {
+	background: linear-gradient(to bottom,#0F3 0%,#F90 50%,#F90 50%,#03C);*/
+	/*background: linear-gradient(to bottom,#03C 0%,#0F3 50%,#0F3 50%,#03C);*/
+	/*background: radial-gradient(circle farthest-corner at center,#0F3,#03C);*/
+}
+/*299A0B  #0F3  90C*/
+.clearfix {
+	clear:both;
+}
+header {
+	text-align: center;
+}
+#container {
+	width: 330px;
+	min-height: 400px;
+	background:#060;
+	overflow: auto;
+	margin: 60px auto;
+	-moz-border-radius:10px;
+	-webkit-border-radius:10px;
+	border-radius:10px;
+	border:#3FF solid 3px;
+}
+#fin {
+	background: linear-gradient(to bottom,#0F3 0%,#F90 50%,#F90 50%,#03C);
+}
+#audio-image {
+	position:relative;
+	overflow:hidden;
+	height: 200px;
+	margin-bottom:15px;
+}
+	
+#audio-info {
+	text-align:center;
+}
+
+#audio-info .artist {
+	font-weight:bold;
+}
+
+.cover {
+	width:100%;
+	z-index:1;
+}
+#btn {
+	text-align:center;
+}
+#btn ul li a {
+	text-align:center;
+}
+span {
+	text-align:center;
+	display: inline-table;
+}
+button#play {
+	width:70px;
+	height:70px;
+	background-color: transparent;
+	background: url(../images/play.png) no-repeat;float:none;
+	}
+button#pause {
+	width:70px;
+	height:70px;
+	background-color: transparent;
+	background:url(../images/pause.png) no-repeat;float:left;
+	}	
+button#stop {
+	width:70px;
+	height:70px;
+	background-color: transparent;
+	background: url(../images/stop.png) no-repeat;float:none;
+	}
+
+button#aumentar {
+	width:70px;
+	height:70px;
+	background-color: transparent;
+	background: url(../images/mas.png) no-repeat;float:none;}
+button#disminuir {
+	width:70px;
+	height:70px;
+	background-color: transparent;
+	background: url(../images/menos.png) no-repeat;float:none;
+}
+button#buscar {
+	width:70px;
+	height:70px;
+	background-color: transparent;
+	background: url(../images/search.png) no-repeat;float:none;
+}
+#playlist {
+	list-style-type:none;
+	padding:10px;
+}
+
+#playlis li {
+	cursor:pointer;
+	margin:5px;
+}
+
+#tracker {
+	position:relative;
+	width:100%;
+}
+
+#playlist li.active {
+	font-weight:bold;
+	padding:3px;
+	background:#03F;
+}
+
+#progressBar {
+	width:80%;
+	margin-left:2%;
+	margin-bottom:20px;
+	margin-top:9px;
+	height:10px;
+	background:url(../images/progress_bg.png) no-repeat;
+	float:left;
+}
+
+#progress {
+	background: url(../images/progress.png) no-repeat;
+	height:10px;
+	display:inline-block;
+}
+
+#duration {
+	position: absolute;
+	top:0;
+	right:10px;
+	padding:4px 8px;
+	background:#0F0;
+	border-radius:5px;
+}

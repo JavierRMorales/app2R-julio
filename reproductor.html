@@ -1,0 +1,53 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Documento sin título</title>
+ <link rel="stylesheet" href="css/estilo.css"/>
+ <script src="js/main.js"></script>
+</head>
+
+<body>
+	<div data-role="page" id="principal" data-theme="b">
+    	<div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="b">
+        <h1>Repreductor de musica</h1>
+    </div>
+<div>
+	<input id="fileInput" type="file" size="50" onchange="processFiles(this.files)">
+    <audio id="demo" src='musica/LinkiPark.mp3'></audio>
+   <div id="btn">
+    <span>
+		<button onclick="document.getElementById('demo').play()" id="play"></button>
+			<br>
+		<button onclick="document.getElementById('demo').pause()" id="pause"></button>
+			<br>
+		<button onclick="document.getElementById('demo').stop()" id="stop"></button>
+			<br>
+		<button onclick="document.getElementById('demo').volume+=0.1" id="aumentar"></button>
+			<br>
+		<button onclick="document.getElementById('demo').volume-=0.1" id="disminuir"></button>
+			<br> 
+    </span>
+	<div id="fondo">
+		<div data-role="main" class="ui-content" align="center">
+			<div style="width: 40%;" id="btn">
+				<ul data-role="controlgroup" data-type="vertical" data-theme="b">
+					<li class=" ui-first-child ui-last-child">
+						<a href="#" data-role="button" id="buscar">  
+							<img src="images/search.png">
+						</a>
+					</li>
+				</ul>
+			</div>
+		</div>
+    </div>
+   </div>
+</div>
+    <div data-role="footer" align="center" data-theme="b" data-position="fixed" id="fin">
+   		<h4>====Javier Rugerio Morales====Samuel Galindo Rodriguez====Luz María Cruz de la Rosa====</h4>
+    	 <img src="res/android/mdpi.png" width="56" height="46">
+    </div>
+    </div>
+    <script src="js/main.js"></script>
+</body>
+</html>

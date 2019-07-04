@@ -1,0 +1,29 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Documento sin título</title>
+</head>
+
+<body>
+public classPoIExplorer extends ListActivity {
+
+    private List listaNombresArchivos;
+    private List listaRutasArchivos;
+    private ArrayAdapter adaptador;
+    private String directorioRaiz;
+    private TextView carpetaActual;
+
+    @Override
+    public void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        setContentView(R.layout.main);
+        carpetaActual = (TextView) findViewById(R.id.rutaActual);
+
+        directorioRaiz = Environment.getExternalStorageDirectory().getPath();
+
+        verArchivosDirectorio(directorioRaiz);
+    }
+}
+</body>
+</html>
